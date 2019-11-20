@@ -20,6 +20,7 @@ export class HomeComponent implements OnInit {
     let StateOfResult = this.service.GetData();
 
     StateOfResult.subscribe((result)=>{
+      console.log(result);
       this.employees = result;
     });
   }
